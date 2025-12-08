@@ -1,0 +1,67 @@
+
+
+body{
+    background-color: #f2f7f7;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* titulos */
+h1, h2, h3{
+    color: #2f5e60;
+}
+
+/* div's */
+#cadastros, #lista_despesas, #box_resumo{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(95, 158, 160, 0.3);
+}
+
+/* inputs */
+#valor, #nome, #data, #salario{
+    padding: 8px;
+    width: 70%;
+    border: 1px solid #5f9ea0;
+    border-radius: 5px;
+}
+
+/* buttons */
+button, input[type="button"], input[type="submit"]{
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #5f9ea0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background-color: #2f5e60;
+}
+
+/* lista despesas */
+#output li{
+    list-style: none;
+    background-color: #e2eeee;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border-left: 4px solid #5f9ea0;
+}
+
+/* resumo */
+#resumo p{
+    font-size: 18px;    
+    margin: 8px 0;
+    padding: 8px;
+    background: #eaf4f4;
+    border-radius: 5px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Pessoal de Finanças</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Cadastro Financeiro:
+        O usuário poderá cadastrar o salário no campo salário
+        O usuário  poderá cadastrar as despesas nos campos:
+                        - Data
+                        - Nome;
+                        - Valor
+
+        Listagem Financeira:
+        O sistema exibirá uma listagem com as despesas contendo Data, Nome e Valor
+        Resumo Financeiro:
+
+        O sistema deve apresentar  um resumo que mostre:
+
+        o    O salário
+        o    O total de despesas;
+        o    O saldo final.
+
+        Armazenamento Local:
+        Todas as informações devem ser salvas no LocalStorage e carregadas automaticamente ao abrir o site. -->
+
+    <h1>Controle Pessoal de Finanças</h1>
+    <br>
+
+    <div id="cadastros">
+
+        <div class="cadastro_salario">
+            <h3>Cadastre seu salário</h3>
+            <label for="salario">Salário: </label>
+            <input type="text" id="salario" required>
+            <br><br>
+
+            <input type="button" value="Salvar" onclick="salvar()">
+        </div>
+
+        <form id="form_Despesas">
+            <h3>Cadastro das Despesas</h3>
+            <label for="data">Data: </label>
+            <input type="date" id="data" required>
+            <br><br>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" required>
+            <br><br>
+            <label for="valor">Valor: </label>
+            <input type="text" id="valor" required>
+            <br><br>
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+
+    <br><hr><br>
+
+    <div id="lista_despesas">
+        <h2>Listagem Financeira</h2>
+        <ul id="output"></ul>
+        <input type="button" value="Deletar Despesas" onclick="deletar()">
+
+    </div>
+    
+    <div id="box_resumo">
+        <h2>Resumo</h2>
+        <div id="resumo">
+            
+        </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
