@@ -85,12 +85,10 @@ function resumo_Financeiro() {
     saldo_p.textContent = 'Saldo restante: R$' + saldo.toFixed(2)
     resumo.appendChild(saldo_p)
 
-    if (saldo < 0) {
-        saldo_p.style.backgroundColor = 'red'
-        saldo_p.style.color = 'white'
-    } else if (saldo > 0) {
-        saldo_p.style.backgroundColor = 'green'
-        saldo_p.style.color = 'white'
+    if (saldo < 0){
+        saldo_p.style.backgroundColor = 'Indianred'
+    } else if (saldo > 0){
+        saldo_p.style.backgroundColor = 'Lightgreen'
     }
 
 }
