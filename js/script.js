@@ -86,9 +86,11 @@ function resumo_Financeiro() {
     resumo.appendChild(saldo_p)
 
     if (saldo < 0) {
-        saldo_p.style.backgroundColor = 'Indianred '
+        saldo_p.style.backgroundColor = 'red'
+        saldo_p.style.color = 'white'
     } else if (saldo > 0) {
-        saldo_p.style.backgroundColor = 'Lightgreen'
+        saldo_p.style.backgroundColor = 'green'
+        saldo_p.style.color = 'white'
     }
 
 }
