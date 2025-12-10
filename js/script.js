@@ -37,7 +37,7 @@ function salvar() {
 function deletarSalario() {
     var salario = document.getElementById("salario")
     salario.value = ""
-
+    resumo_Financeiro()
 }
 
 
@@ -85,5 +85,10 @@ function resumo_Financeiro() {
     saldo_p.textContent = 'Saldo restante: R$' + saldo.toFixed(2)
     resumo.appendChild(saldo_p)
 
+    if (saldo < 0) {
+        saldo_p.style.backgroundColor = 'red'
+    } else if (saldo > 0) {
+        saldo_p.style.backgroundColor = 'green'
+    }
 
 }

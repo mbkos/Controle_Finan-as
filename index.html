@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle Pessoal de Finanças</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
     <!-- Cadastro Financeiro:
         O usuário poderá cadastrar o salário no campo salário
         O usuário  poderá cadastrar as despesas nos campos:
@@ -41,7 +43,6 @@
 
             <input type="button" value="Salvar" onclick="salvar()">
             <br>
-            <input type="button" value="Deletar" onclick="deletarSalario()">
         </div>
 
         <form id="form_Despesas">
@@ -59,7 +60,8 @@
         </form>
     </div>
 
-    <br><hr><br>
+    <br>
+    <hr><br>
 
     <div id="lista_despesas">
         <h2>Listagem Financeira</h2>
@@ -67,14 +69,16 @@
         <input type="button" value="Deletar Despesas" onclick="deletar()">
 
     </div>
-    
+
     <div id="box_resumo">
         <h2>Resumo</h2>
         <div id="resumo">
-            
+
         </div>
+        <input type="button" value="Deletar Salario" onclick="deletarSalario()">
     </div>
     <script type="text/javascript" src="js/script.js"></script>
 
 </body>
+
 </html>
