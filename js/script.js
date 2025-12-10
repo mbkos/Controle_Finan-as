@@ -30,7 +30,6 @@ function salvar(){
         alert("Valor invalido, por favor preencha corretamente.")
         return
     }
-    salario.innerHTML=""
     resumo_Financeiro()
 }
 
