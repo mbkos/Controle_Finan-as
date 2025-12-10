@@ -75,10 +75,11 @@ function resumo_Financeiro(){
 
     var saldo = salario - total_Despesas
     var saldo_p = document.createElement('p')
-    saldo_p.textContent = 'Saldo restante: R$' + saldo.toFixed(2)
-    resumo.appendChild(saldo_p)
     if(saldo<0){
         salario_p.style.color = "red"
     }
+    saldo_p.textContent = 'Saldo restante: R$' + saldo.toFixed(2)
+    resumo.appendChild(saldo_p)
+    
     
 }
